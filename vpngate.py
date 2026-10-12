@@ -25,7 +25,7 @@ for stream in (sys.stdout, sys.stderr):
 ROOT = Path(__file__).resolve().parent
 VPNGATE_API = os.getenv("VPNGATE_API", "http://www.vpngate.net/api/iphone/")
 VPNGATE_MIRROR = os.getenv("VPNGATE_MIRROR", "https://raw.githubusercontent.com/fdciabdul/Vpngate-Scraper-API/main/json/data.json")
-WORKER_CHECK_URL = os.getenv("CHECK_WORKER", "https://restless-salad-3df5.wumiao2022.workers.dev/check?sstp=vpn:vpn@")
+WORKER_CHECK_URL = os.getenv("CHECK_WORKER", "https://check.socks5.cmliussss.net/check?sstp=vpn:vpn@")
 # 默认沿用原 SSTP 接口。若 Worker 实际使用 proxyip，可设置 CHECK_PARAM=proxyip。
 CHECK_PARAM = os.getenv("CHECK_PARAM", "").strip()
 CONCURRENCY = max(1, int(os.getenv("CHECK_CONCURRENCY", "32")))
